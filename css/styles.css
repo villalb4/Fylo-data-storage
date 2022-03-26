@@ -23,9 +23,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 30px;
   height: 100vh;
   font-family: 'Raleway', sans-serif;
   background-color: var(--Very-Dark-Blue);
+  background-image: url(../images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /* background-position: 0px 48.5vh; */
+  background-size: contain;
+  padding: 0 50px;
 }
 
 
@@ -38,12 +45,13 @@ body {
   height: 201px;
   width: 350px;
   border-radius: 12px 100px 12px 12px;
+  /* margin-left: 90px; */
 }
 .div-logo {
   margin-left: 41px;
 }
 .logo {
-  padding-top: 5px;
+  padding-top: 6px;
 }
 h1 {
   display: none;
@@ -52,11 +60,17 @@ h1 {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin: 33.73px 0 0 41px;
+  padding-top: 29px;
+  margin: 0px 0 9px 41px;
 }
 .icons {
   background-color: var(--Very-Dark-Blue);
   border-radius: 10px;
+  cursor: pointer;
+}
+.icons:hover {
+  filter: opacity(70%);
+  transition: 0.2s;
 }
 .i1 {
   padding: 12px 14px 8px 14px;
@@ -66,4 +80,37 @@ h1 {
 }
 .i3 {
   padding: 16px 12px 12px 12px
+}
+
+
+
+
+.graphic {
+  width: 540px;
+  background-color: var(--Dark-Blue);
+}
+.storage {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  width: 459px;
+  border-radius: 10px;
+  background-color: var(--Very-Dark-Blue);
+}
+.porcent {
+  background: linear-gradient(to right, #fba399, #fb4d93);
+  height: 15px;
+  width: 70%;
+  border-radius: 10px;
+  margin-left: 3px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.range {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  margin-right: 3px;
+  background-color: antiquewhite;
 }
