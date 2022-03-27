@@ -13,6 +13,7 @@
 --Very-Dark-Blue: hsl(229, 57%, 11%);
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +22,7 @@
 
 
 body {
-   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -35,12 +36,6 @@ body {
   padding: 0 50px;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  margin: auto;
-}
 
 .panel {
   display: flex;
@@ -49,6 +44,7 @@ body {
   background-color: var(--Dark-Blue);
   width: 350px;
   border-radius: 12px 100px 12px 12px;
+  transition: 1s;
 }
 .div-logo {
   margin-left: 41px;
@@ -96,6 +92,7 @@ h1 {
   border-radius: 12px;
   width: 540px;
   min-width: 490px;
+  transition: 1s;
 }
 .graphic-container {
   display: flex;
@@ -153,6 +150,11 @@ h2 {
   background-color: antiquewhite;
 }
 .gb {
+  transition: none;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--Pale-Blue);
+  letter-spacing: -0.024em;
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
@@ -165,7 +167,14 @@ h2 {
 
   body {
     flex-direction: column;
+    background-color: var(--Very-Dark-Blue);
+    background-image: url(../images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    padding: 0 5px;
   }
+
 
   .panel {
     width: 326px;
@@ -174,5 +183,19 @@ h2 {
 
   .graphic {
     width: 326px;
+    min-width: 326px;
+    margin-top: 0px;
+  }
+  .graphic-container {
+    width: 262px;
+  }
+  .storage {
+    width: 262px;
+  }
+  .porcent {
+    width: 193px;
+  }
+
+  .message {
   }
 }
