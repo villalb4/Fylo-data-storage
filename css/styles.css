@@ -19,18 +19,18 @@
   box-sizing: border-box;
 }
 
+
 body {
    display: flex;
-  /* justify-content: center;
+  justify-content: center;
   align-items: center;
-  gap: 30px; */
+  gap: 30px;
   height: 100vh;
   font-family: 'Raleway', sans-serif;
   background-color: var(--Very-Dark-Blue);
   background-image: url(../images/bg-desktop.png);
   background-repeat: no-repeat;
   background-position: bottom;
-  /* background-position: 0px 48.5vh; */
   background-size: contain;
   padding: 0 50px;
 }
@@ -48,7 +48,6 @@ body {
   justify-content: center;
   background-color: var(--Dark-Blue);
   width: 350px;
-  min-width: 260px;
   border-radius: 12px 100px 12px 12px;
 }
 .div-logo {
@@ -90,15 +89,42 @@ h1 {
 
 
 .graphic {
+  /* display: none; */
   margin-top: 44px;
   background-color: var(--Dark-Blue);
-  padding: 0 39px;
-  height: 154px;
+  /* padding: 0 39px; */
+  border-radius: 12px;
+  width: 540px;
+  min-width: 490px;
+}
+.graphic-container {
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  margin: 0 auto;
 }
 .p-gra {
   font-size: 15px;
   letter-spacing: -0.024em;
   color: var(--Pale-Blue);
+  margin-top: 39px;
+}
+.message {
+  display: none;
+  right: 18.5rem;
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+}
+h2 {
+  font-size: 40px;
+  color: var(--Dark-Blue);
+  padding: 12px 25px 13px 24px;
+}
+.gb-left {
+  font-size: 12.5px;
+  letter-spacing: 0.046em;
+  color: var(--Grayish-Blue);
 }
 .storage {
   display: flex;
@@ -107,11 +133,12 @@ h1 {
   width: 459px;
   border-radius: 10px;
   background-color: var(--Very-Dark-Blue);
+  margin: 15px 0 7px 0;
 }
 .porcent {
   background: linear-gradient(to right, #fba399, #fb4d93);
   height: 14px;
-  width: 70%;
+  width: 340px;
   border-radius: 10px;
   margin-left: 3px;
   display: flex;
@@ -128,4 +155,24 @@ h1 {
 .gb {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 880px) {
+  * {
+    transition: 1s;
+  }
+
+  body {
+    flex-direction: column;
+  }
+
+  .panel {
+    width: 326px;
+    transition: 1s;
+  }
+
+  .graphic {
+    width: 326px;
+  }
 }
